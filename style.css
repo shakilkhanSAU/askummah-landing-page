@@ -71,31 +71,19 @@ nav ul li a:hover {
 }
 
 .text-box {
-    width: 90%;
-    color: #fff;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.text-box h1 {
-    font-size: 3.5rem;
-}
-
-.text-box p {
-    margin: 10px 0px 30px;
-    font-size: .9rem;
-    color: #fff;
-}
-
-/* .info {
+.info {
     display: flex;
     justify-content: center;
     align-items: center;
     padding:  100px 100px;
     flex-direction: column;
+    height: calc(100vh - 65px);
 }
 
 .hero h1 {
@@ -108,7 +96,7 @@ nav ul li a:hover {
     font-size: 18px;
     color: #fff;
     text-align: center;
-} */
+}
 
 @media (max-width: 970px) {
     nav ul {
@@ -151,7 +139,7 @@ nav ul li a:hover {
     }
     /* hero section styling  */
     .info {
-        padding: 50px;
+        padding: 40px;
     }
     
     .hero h1 {
