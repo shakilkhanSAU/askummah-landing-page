@@ -65,7 +65,7 @@ nav ul li a:hover {
 .hero {
     min-height: calc(100vh - 65px);
     width: 100%;
-    background-image: linear-gradient(rgba(4,8,30,0.6),rgba(4,8,30,0.6)),url(./images/bg1.jpg);
+    background-image: linear-gradient(rgba(4,8,30,0.5),rgba(4,8,30,0.5)),url(./images/bg.jpg);
     background-position: center;
     background-size: cover;
 }
