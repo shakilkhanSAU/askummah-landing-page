@@ -70,7 +70,27 @@ nav ul li a:hover {
     background-size: cover;
 }
 
-.info {
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.text-box h1 {
+    font-size: 3.5rem;
+}
+
+.text-box p {
+    margin: 10px 0px 30px;
+    font-size: .9rem;
+    color: #fff;
+}
+
+/* .info {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -79,7 +99,7 @@ nav ul li a:hover {
 }
 
 .hero h1 {
-    font-size: 40px;
+    font-size: 70px;
     color: #fff;
     text-align: center;
 }
@@ -87,8 +107,8 @@ nav ul li a:hover {
 .hero p {
     font-size: 18px;
     color: #fff;
-    text-align: right;
-}
+    text-align: center;
+} */
 
 @media (max-width: 970px) {
     nav ul {
@@ -97,15 +117,22 @@ nav ul li a:hover {
         left: -100%;
         height: 100vh;
         width: 100%;
-        background: rgba(0, 0, 0, 0.8);
+        background: rgba(0, 0, 0, 0.95);
         display: block;
         align-items: center;
         text-align: center;
         transition: all ease 0.7s;
+        z-index: 2;
+    }
+    nav .brand h1 {
+        font-size: 30px;
+        color: #fff;
+        font-weight: 700;
+        cursor: pointer;
     }
     nav ul li a:hover {
         background: transparent;
-        color: crimson);
+        color: crimson;
     }
     
     nav ul li {
@@ -121,6 +148,18 @@ nav ul li a:hover {
     }
     #click:checked ~ .manu-btn i::before {
         content: "\f00d";
+    }
+    /* hero section styling  */
+    .info {
+        padding: 50px;
+    }
+    
+    .hero h1 {
+        font-size: 28px;
+    }
+    
+    .hero p {
+        font-size: 18px;
     }
 }
 
